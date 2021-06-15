@@ -2,7 +2,7 @@
 
 int main()
 {
-  int value[] = {10, -5, 20, 0, 40. -5};
+  int value[] = {10, -5, 20, 0, 40, -5};
   int s = sizeof(value) / sizeof(int);
 
   // while文での処理
@@ -47,8 +47,8 @@ int main()
       // i++; <-- for文では不要になる
       continue;
     }
-    printf("for処理の終了");
   }
+  printf("for処理の終了\n"); // cで書いてみた
 
   // 範囲for文での処理
   for (int elem : value) // 範囲for文を使って走査
@@ -67,6 +67,6 @@ int main()
       std::cout << elem << "は負の数です" << std::endl;
       continue;
     }
-    printf("範囲for処理の終了");
   }
+  printf("範囲for処理の終了");
 }
